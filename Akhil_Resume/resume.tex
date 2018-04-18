@@ -1,0 +1,127 @@
+
+\documentclass[a4paper,12pt,final]{memoir}
+
+\renewcommand{\familydefault}{bch}	
+\pagestyle{empty}					
+\setlength{\parindent}{0pt}			
+
+\usepackage{flowfram}									
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}
+\usepackage{graphicx}										
+\usepackage{url}											
+\usepackage[usenames,dvipsnames]{xcolor}				
+\usepackage{multicol}									
+	\setlength{\multicolsep}{0pt}
+\usepackage{paralist}									
+\usepackage{tikz}
+\usepackage{tabu}
+\usepackage{enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+
+
+
+
+\setlength{\vcolumnsep}{\baselineskip}
+\setlength{\columnsep}{\vcolumnsep}
+
+
+\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
+	\newlength{\LeftMainSep}
+	\setlength{\LeftMainSep}{0.2\textwidth}
+	\addtolength{\LeftMainSep}{1\columnsep}
+ 
+
+\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+ 
+\begin{staticcontents}{1}
+\hfill
+\tikz{%
+	\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0]
+	(0,0) -- (0,\textheight);}%
+\hfill\mbox{}
+\end{staticcontents}
+ 
+
+\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1\columnsep}
+\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+
+\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+\newenvironment{AboutMe}
+	{\ignorespaces\textbf{\color{RoyalBlue} About me}}
+	{\Sep\ignorespacesafterend}
+	
+\newcommand{\CVSection}[1]
+	{\Large\textbf{#1\par}
+	\SmallSep\normalsize\normalfont}
+
+\newcommand{\CVItem}[1]
+	{\color{RoyalBlue} #1}
+
+
+
+\begin{document}
+
+
+\begin{figure}
+	\hfill
+	\includegraphics[width=0.6\columnwidth]{my.jpeg}
+	\vspace{-8cm}
+\end{figure}
+
+\begin{flushright}\small
+	Maliackal (H)
+	Mookkannoor
+	Angamaly- 683577 
+	Kerala \\
+	
+	
+	(+91) 9447827165\\
+	\tiny
+	\url{akhilmaliackal@gmail.com}  \\
+\end{flushright}\normalsize
+\framebreak
+
+
+%def
+\Huge\bfseries {\color{RoyalBlue} Akhil Joy} \\
+
+
+\normalsize\normalfont
+
+
+
+\color{RoyalBlue}MY Objective is \color{Black}“To pursue a challenging career in the field of Computer Science and to be a part of progressive organization that provides generous opportunities for learning and advancement in my career.\newline
+
+
+
+
+
+\CVSection{Education}
+
+
+\begin{tabular}{ |p{2cm}|p{3cm}|p{4cm}|p{2cm}|p{1.5cm}|}
+ \hline
+ \vfill 
+ 
+\color{red} Degree&\vfill \color{red}  College/School&\vfill \color{red} University/ Board&\vfill \color{red} Passing Year&\vfill \color{red} Pass Percentage/ CGPA\\
+ \hline \vfill
+ Under graduate (B tech) & \vfill Federal Institute of Science And Technology &\vfill APJ Abdul Kalam Technological University&\vfill 2019&\vfill 7.8\tiny cgpa\\
+ \hline \vfill
+ XII & \vfill Govt Higher Secondary School Manjapra  &\vfill State Board&\vfill 2015&\vfill 82.58\% \\\hline
+  \vfill X &\vfill De Paul EMHSS Angamaly & \vfill State Board &\vfill 2013 &\vfill 94\% \\\hline
+
+
+ 
+\end{tabular}
+\newline \newline
+\sep
+
+
+
+
+\end{document}
